@@ -10,8 +10,26 @@
 	===========================================================================
 #>
 
+<#
+	.SYNOPSIS
+		Get plex user toker from plex.tv
+	
+	.DESCRIPTION
+		Can be use for the Token parameter in othe functions
+		if you dont know how to get it yourself
+	
+	.PARAMETER Credentials
+		A description of the Credentials parameter.
+	
+	.EXAMPLE
+				PS C:\> Get-PlexTVToken
+	
+	.NOTES
+		Additional information about the function.
+#>
 function Get-PlexTVToken
 {
+	[CmdletBinding()]
 	param
 	(
 		[Parameter(Mandatory = $false)]
