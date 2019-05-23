@@ -19,7 +19,7 @@
 	RootModule = 'Plex-PS-Module.psm1'
 	
 	# Version number of this module.
-	ModuleVersion = '1.0.0.0'
+	ModuleVersion = '1.1.0.0'
 	
 	# ID used to uniquely identify this module
 	GUID = '4a2c4842-30fb-48bb-beef-b440615fae59'
@@ -37,7 +37,7 @@
 	Description = 'Module description'
 	
 	# Minimum version of the Windows PowerShell engine required by this module
-	PowerShellVersion = '3.0'
+	PowerShellVersion = '5.0'
 	
 	# Name of the Windows PowerShell host required by this module
 	PowerShellHostName = ''
@@ -77,8 +77,8 @@
 	
 	# Functions to export from this module
 	FunctionsToExport = @(
-		'Get-PlexToken',
-		'Get-PlexServerList',
+		'Get-PlexTVToken',
+		'Get-PlexTVServerList',
 		'Test-PlexConnection',
 		'Get-PlexSectionKey',
 		'Get-PlexLibrarieSections',
