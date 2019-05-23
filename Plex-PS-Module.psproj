@@ -1,0 +1,13 @@
+﻿<Project Synchronized="False" SyncFilter="*.ps1;*.psm1;*.psd1;*.ps1xml;*.psf;*.pss;*.xml;*.help.txt" AutoExportFunctions="True" AutoExportPS1XMLFiles="True">
+  <Version>2.1</Version>
+  <FileID>4a2c4842-30fb-48bb-beef-b440615fae59</FileID>
+  <ProjectType>1</ProjectType>
+  <Folders />
+  <Files>
+    <File Build="2">Plex-PS-Module.psd1</File>
+    <File Build="0" ExportFunctions="True">Plex-PS-Module.psm1</File>
+    <File Build="1" Shared="False" ReferenceFunction="Invoke-Test-Module_ps1" ExportFunctions="False">Test-Module.ps1</File>
+    <File Build="1">.gitignore</File>
+  </Files>
+  <StartupScript>C:\Users\Odin\OneDrive\GitHubRepo\Plex-PS-Module\Plex-PS-Module\Test-Module.ps1</StartupScript>
+</Project>
