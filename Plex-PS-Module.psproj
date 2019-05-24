@@ -9,5 +9,5 @@
     <File Build="1" Shared="False" ReferenceFunction="Invoke-Test-Module_ps1" ExportFunctions="False">Test-Module.ps1</File>
     <File Build="1">.gitignore</File>
   </Files>
-  <StartupScript>C:\Users\Odin\OneDrive\GitHubRepo\Plex-PS-Module\Plex-PS-Module\Test-Module.ps1</StartupScript>
+  <StartupScript>C:\Users\Odin\OneDrive\GitHubRepo\Plex-PS-Module\Test-Module.ps1</StartupScript>
 </Project>

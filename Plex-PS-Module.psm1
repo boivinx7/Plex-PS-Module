@@ -284,4 +284,50 @@ type=1&id=$RatingKey&collection[0].tag.tag=$CollectionName
 }
 
 
+function Get-PlexServerPreferences ($hostname, $Token)
+{
+	$URI = "http://$hostname/:/prefs/?X-Plex-Token=$Token"
+	$Invoke = Invoke-WebRequest -Uri $URI
+	$Xmlfile = [XML]$Invoke.content
+	$Xmlfile.MediaContainer.setting
+}
 
+function Get-PlexLocalServers ($hostname, $Token)
+{
+	$URI = "http://$hostname/servers/?X-Plex-Token=$Token"
+	$Invoke = Invoke-WebRequest -Uri $URI
+	$Xmlfile = [XML]$Invoke.content
+	$Xmlfile.MediaContainer.server
+}
+
+function Get-PlexSystemInformation ($hostname, $Token)
+{
+	$URI = "http://$hostname/system/?X-Plex-Token=$Token"
+	$Invoke = Invoke-WebRequest -Uri $URI
+	$Xmlfile = [XML]$Invoke.content
+	$Xmlfile.MediaContainer.Directory
+}
+
+function Get-PlexAvailableAgents ($hostname, $Token)
+{
+	$URI = "http://$hostname/system/agents/?X-Plex-Token=$Token"
+	$Invoke = Invoke-WebRequest -Uri $URI
+	$Xmlfile = [XML]$Invoke.content
+	$Xmlfile.MediaContainer.agent
+}
+
+function Get-PlexSessionsStatus ($hostname, $Token)
+{
+	$URI = "http://$hostname/status/sessions/?X-Plex-Token=$Token"
+	$Invoke = Invoke-WebRequest -Uri $URI
+	$Xmlfile = [XML]$Invoke.content
+	$Xmlfile.MediaContainer.video
+}
+
+function Get-PlexSessionsHistory ($hostname, $Token)
+{
+	$URI = "http://$hostname/status/sessions/history/all/?X-Plex-Token=$Token"
+	$Invoke = Invoke-WebRequest -Uri $URI
+	$Xmlfile = [XML]$Invoke.content
+	$Xmlfile.MediaContainer.video
+}

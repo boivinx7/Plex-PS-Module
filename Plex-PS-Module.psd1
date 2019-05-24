@@ -87,7 +87,13 @@
 		'Get-PlexVideoMetadata',
 		'Set-PlexVideoWatchedStatus',
 		'Get-PlexSearchMedia',
-		'Set-PlexCollectionMovie'
+		'Set-PlexCollectionMovie',
+		'Get-PlexServerPreferences',
+		'Get-PlexLocalServers',
+		'Get-PlexSystemInformation',
+		'Get-PlexAvailableAgents',
+		'Get-PlexSessionsStatus',
+		'Get-PlexSessionsHistory'
 	) #For performance, list functions explicitly
 	
 	# Cmdlets to export from this module
