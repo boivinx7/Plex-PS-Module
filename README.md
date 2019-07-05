@@ -12,7 +12,7 @@ https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-ple
 
 Or Continue Reading
 
-![alt text](https://i.imgur.com/VaxfaAq.png)
+![alt text](https://imgur.com/FOjSEGg.png)
 
 # Getting started
 ## One-time setup (PowerShell Gallery)
